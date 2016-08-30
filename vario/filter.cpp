@@ -5,18 +5,26 @@
 #define DERIVATED_PA_TO_MS_COEF	12
 
 
+//// feed-forward coefficients
+//#define B_0  	28
+//#define B_1  	0
+//#define B_2  	-28
+//// feed-back coefficients,
+//#define A_0 	1000
+//#define A_1  	-1945
+//#define A_2  	945
+
+
 // feed-forward coefficients
-#define B_0  	251
-#define B_1  	0
-#define B_2  	-251
+#define B_0    251
+#define B_1   0
+#define B_2   -251
 // feed-back coefficients,
-#define A_0 	2048
-#define A_1  	-3576
-#define A_2  	1547
+#define A_0   2048
+#define A_1   -3576
+#define A_2   1547
 
-
-
-//Low pass butterworth filter order=4 alpha1=0.004 
+//Low pass butterworth filter order=1 alpha1=0.004 
 Filter::Filter()
 {
       x_1=0; 
