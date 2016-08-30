@@ -10,9 +10,13 @@ class Filter
 	public:
 		Filter();
 	private:
-		short v[5];
+     long  x_1;
+     long  x_2;
+     long  y_1;
+     long  y_2;
+
 	public:
-		short step(short x);
+		long filter(long x);
 };
 
 #endif
